@@ -15,7 +15,7 @@ tasks:
       dest: ./tmp/recipe/
       
     - action: download_file
-      url: https://codeload.github.com/Trsak/CoolFivemFramework/zip/refs/heads/main
+      url: https://codeload.github.com/NewEditOfficial/CoolFivemFramework/zip/refs/heads/main
       path: ./tmp/framework.zip
 
     - action: unzip
