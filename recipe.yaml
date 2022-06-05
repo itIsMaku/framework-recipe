@@ -3,11 +3,6 @@ version: v1.0
 author: Trsak
 description: Custom FW built by Trsak, rozkothe, RIOT_, SLayer, taurus, Goldberg, Rejben, bertt, Filis93, NewEdit
 
-variables: 
-    serverName: Trsak-FW
-    recipeName: Trsak-FW
-    dbName: trsak_fw
-    
 tasks: 
     - action: download_github
       src: https://github.com/citizenfx/cfx-server-data
