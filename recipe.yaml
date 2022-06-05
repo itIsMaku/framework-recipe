@@ -14,17 +14,20 @@ tasks:
       ref: main
       dest: ./tmp/recipe/
       
-    - action: download_github
-      src: https://github.com/Trsak/CoolFivemFramework
-      ref: main
+    - action: download_file
+      url: https://codeload.github.com/Trsak/CoolFivemFramework/zip/refs/heads/main
+      path: ./tmp/framework.zip
+
+    - action: unzip
+      src: ./tmp/framework.zip
       dest: ./tmp/framework
-      
+
     - action: move_path
       src: ./tmp/recipe/server.cfg
       dest: ./server.cfg
 
     - action: move_path
-      src: ./tmp/framework
+      src: ./tmp/framework/CoolFivemFramework-main
       dest: ./resources/[framework]
 
     - action: connect_database
@@ -57,3 +60,4 @@ tasks:
 
     - action: remove_path
       path: ./resources/[framework]/[system]/hardcap
+      
