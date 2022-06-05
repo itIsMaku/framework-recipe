@@ -7,3 +7,20 @@ You can use the code, even just parts of it - but respect the LICENSE!
   
 There will be no future updates, the source code is given as is. 
 You can only find there resources created by us or updated versions of open soruce resources. Others are not included.
+
+Repo with full base, not plug & play (https://github.com/Trsak/CoolFivemFramework)
+
+# Authors
+
+List of people that have contributed in a period of longer time:
+
+* Trsak
+* rozkothe
+* RIOT_
+* Slayer
+* taurus
+* Goldberg
+* Rejben
+* bertt
+* Filis93
+* NewEdit
