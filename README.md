@@ -1,6 +1,6 @@
 # trsak-framework-recipe
 
-Warning: Its not ready for usage, still WIP.
+# Warning: Its not ready for usage, still WIP.
 
 This repository contains whole custom FiveM framework with many resources. 
 All messsages in those resources are written in Czech language.  
