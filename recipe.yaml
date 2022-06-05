@@ -27,6 +27,10 @@ tasks:
       dest: ./server.cfg
 
     - action: move_path
+      src: ./tmp/recipe/server-shared.cfg
+      dest: ./server-shared.cfg
+
+    - action: move_path
       src: ./tmp/framework/CoolFivemFramework-main
       dest: ./resources/[framework]
 
@@ -60,4 +64,7 @@ tasks:
 
     - action: remove_path
       path: ./resources/[framework]/[system]/hardcap
+
+    - action: remove_path
+      path: ./tmp
       
