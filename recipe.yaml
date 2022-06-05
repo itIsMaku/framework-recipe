@@ -15,7 +15,7 @@ tasks:
       dest: ./resources/[cfx]
 
     - action: download_github
-      src: https://github.com/NewEditOfficial/yyrp-recipe
+      src: https://github.com/NewEditOfficial/trsak-framework-recipe
       ref: main
       dest: ./tmp/recipe/
       
