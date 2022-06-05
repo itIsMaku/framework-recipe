@@ -2,6 +2,8 @@
 
 # Warning: Its not ready for usage, still WIP.
 
+* If you are interested in contribution, you can join discord. ( https://discord.gg/Ffk7t5U3PH)
+
 This repository contains whole custom FiveM framework with many resources. 
 All messsages in those resources are written in Czech language.  
  
@@ -27,3 +29,4 @@ List of people that have contributed in a period of longer time:
 * bertt
 * Filis93
 * NewEdit
+
