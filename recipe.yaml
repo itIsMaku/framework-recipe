@@ -1,0 +1,64 @@
+name: Trsak-FW
+version: v1.0
+author: Trsak
+description: Custom FW built by Trsak, rozkothe, RIOT_, SLayer, taurus, Goldberg, Rejben, bertt, Filis93, NewEdit
+
+variables: 
+    serverName: Trsak-FW
+    recipeName: Trsak-FW
+    dbName: trsak_fw
+    
+tasks: 
+    - action: download_github
+      src: https://github.com/citizenfx/cfx-server-data
+      subpath: resources
+      dest: ./resources/[cfx]
+
+    - action: download_github
+      src: https://github.com/NewEditOfficial/yyrp-recipe
+      ref: main
+      dest: ./tmp/recipe/
+      
+    - action: download_github
+      src: https://github.com/Trsak/CoolFivemFramework
+      ref: main
+      dest: ./tmp/framework
+      
+    - action: move_path
+      src: ./tmp/recipe/server.cfg
+      dest: ./server.cfg
+
+    - action: move_path
+      src: ./tmp/framework
+      dest: ./resources/[framework]
+
+    - action: connect_database
+    - action: query_database
+      file: ./tmp/recipe/database.sql
+
+    - action: remove_path
+      path: ./resources/[framework]/database.sql
+      
+    - action: remove_path
+      path: ./resources/[framework]/resources.cfg
+
+    - action: remove_path
+      path: ./resources/[framework]/[system]/[builders]
+
+    - action: remove_path
+      path: ./resources/[framework]/[gamemodes]
+
+    - action: remove_path
+      path: ./resources/[framework]/[local]
+    
+    - action: remove_path
+      path: ./resources/[framework]/[managers]
+
+    - action: remove_path
+      path: ./resources/[framework]/[system]/hardcap
+
+    - action: remove_path
+      path: ./resources/[framework]/[system]/sessionmanager
+
+    - action: remove_path
+      path: ./resources/[framework]/[system]/hardcap
