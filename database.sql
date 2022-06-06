@@ -2240,6 +2240,94 @@ ALTER TABLE `pddb_phone_history`
   ADD CONSTRAINT `pddb_phone_history_characters_id_fk` FOREIGN KEY (`charid`) REFERENCES `characters` (`id`);
 COMMIT;
 
+INSERT INTO `items` (`name`, `label`, `type`, `weight`, `removable`, `usable`) VALUES 
+    ('cash', 'Hotovost', 'item', '0', '1', '0'),
+    ('bankcard', 'Kreditní karta', 'item', '0', '1', '1'),
+    -- [activites]/fishing
+    ('fishingrod', 'Rybářský prut', 'item', '0', '1', '1'),
+    ('fish_bass', 'Ryba - Bass', 'item', '0', '1', '0'),
+    ('fish_halibut', 'Ryba - Halibut', 'item', '0', '1', '0'),
+    ('fish_tuna', 'Ryba - Tuňák', 'item', '0', '1', '0'),
+    -- [animation]/medic_equipment
+    ('wheelchair', 'Vozík pro vozíčkáře', 'item', '90', '1', '1'),
+    -- [illegal]/kathrin
+    ('jewels', 'Klenoty', 'item', '0', '1', '0'),
+    ('stolen_ringsilver', 'Levný stříbrný prsten', 'item', '0', '1', '0'),
+    ('stolen_ringsilver2', 'Stříbrný prsten', 'item', '0', '1', '0'),
+    ('stolen_ringsilver3', 'Stříbrný prsten s drahokamem', 'item', '0', '1', '0'),
+    ('stolen_ringgold', 'Levný zlatý prsten', 'item', '0', '1', '0'),
+    ('stolen_ringgold2', 'Zlatý prsten', 'item', '0', '1', '0'),
+    ('stolen_ringgold3', 'Zlatý prsten s drahokamem', 'item', '0', '1', '0'),
+    ('stolen_watches', 'Zlaté hodinky', 'item', '0', '1', '0'),
+    ('stolen_watches2', 'Stříbrné hodinky', 'item', '0', '1', '0'),
+    ('stolen_necklacesilver', 'Stříbrný řetízek', 'item', '0', '1', '0'),
+    ('stolen_necklacesilver2', 'Stříbrný řetízek se šňůrkami', 'item', '0', '1', '0'),
+    ('stolen_necklacegold', 'Zlatý řetízek', 'item', '0', '1', '0'),
+    ('stolen_necklacegold2', 'Zlatý řetízek Dix', 'item', '0', '1', '0'),
+    ('stolen_necklacegold3', 'Zlatý řetízek Le Chien', 'item', '0', '1', '0'),
+    ('stolen_necklacegold4', 'Zlatý řetízek LC', 'item', '0', '1', '0'),
+    ('stolen_necklaceblue', 'Modrý náhrdelník', 'item', '0', '1', '0'),
+    ('stolen_diamondpurple', 'Fialový diamant', 'item', '0', '1', '0'),
+    ('stolen_diamondred', 'Rubín', 'item', '0', '1', '0'),
+    ('stolen_diamondblack', 'Černý diamant', 'item', '0', '1', '0'),
+    ('stolen_diamondblue', 'Safír', 'item', '0', '1', '0'),
+    ('stolen_diamondgreen', 'Smaragd', 'item', '0', '1', '0'),
+    ('goldbar_small', 'Malá zlatá cihla', 'item', '0', '1', '0'),
+    -- [illegal]/npc_sell
+    ('weedbag', 'Pytlíček s trávou', 'item', '20', '1', '0'),
+    -- [illegal]/powerplant
+    ('detonator', 'C4', 'item', '0', '1', '0'),
+    ('hack_card', 'Hackovací karta', 'item', '0', '1', '0'),
+    ('hack_usb', 'Hackovací USB', 'item', '0', '1', '0'),
+    ('laptop', 'Laptop', 'item', '0', '1', '0'),
+    -- [illegal]/rob_houses
+    ('lockpick', 'Šperhák', 'item', '0', '1', '0'),
+    ('lotteryticket', 'Loterijní lístek', 'item', '0', '1', '1'),
+    -- [illegal]/rob_locator
+    ('car_keys', 'Klíče od vozidla', 'item', '0', '1', '1'),
+    -- [illegal]/rob_pacific
+    ('thermite', 'Thermite', 'item', '0', '1', '0'),
+    ('goldbar', 'Velká zlatá cihla', 'item', '0', '1', '0'),
+    -- [illegal]/weed
+    ('drugbag', 'Taška s drogami', 'item', '0', '1', '0'),
+    ('cannabis', 'Cannabis', 'item', '0', '1', '0'),
+    ('scale', 'Výha', 'item', '0', '1', '0'),
+    ('joint', 'Joint', 'item', '0', '1', '0'),
+    ('joint_paper', 'Jointový papírek', 'item', '0', '1', '0'),
+    ('plantpot', 'Květináč', 'item', '0', '1', '0'),
+    ('lowgrademaleseed', 'lowgrademaleseed', 'item', '0', '1', '1'),
+    ('highgrademaleseed', 'highgrademaleseed', 'item', '0', '1', '1'),
+    ('lowgradefemaleseed', 'highgradefemaleseed', 'item', '0', '1', '1'),
+    ('wateringcan', 'Tanker s vodou', 'water', '0', '1', '1'),
+    ('purifiedwater', 'Tanker s ošetřenou vodou', 'water', '0', '1', '1'),
+    ('lowgradefert', 'lowgradefert', 'food', '0', '1', '1'),
+    ('highgradefert', 'highgradefert', 'food', '0', '1', '1'),
+    ('supergradefert', 'supergradefert', 'food', '0', '1', '1'),
+    -- [items]/alcoholtester
+    ('alcoholtester', 'Test na alkohol', 'item', '0', '1', '1'),
+    -- [items]/binoculars
+    ('binoculars', 'Dalekohled', 'item', '0', '1', '1'),
+    -- [items]/boombox
+    ('boombox', 'Boombox', 'item', '0', '1', '1'),
+    -- [items]/confetti
+    ('confetti', 'Konfety', 'item', '0', '1', '1'),
+    -- [items]/cuffs
+    ('cuffs', 'Pouta', 'item', '0', '1', '1'),
+    ('keycuff', 'Klíče od pout', 'item', '0', '1', '1'),
+    -- [items]/cutter
+    ('cutter', 'Řezačku', 'item', '0', '1', '1'),
+    -- [items]/dice
+    ('dice', 'Kostka', 'item', '0', '1', '1'),
+    -- [items]/documents
+    ('license', 'Řidičský průkaz', 'item', '0', '1', '1'),
+    ('idcard', 'ID karta', 'item', '0', '1', '1'),
+    -- [items]/jobtablet
+    ('jobtablet', 'Tablet', 'item', '0', '1', '1'),
+    ('defibrilator', 'Defibrilator', 'revive', '0', '1', '1'),
+    ('medkit', 'Medkit', 'item', '0', '1', '1'),
+    ('firstaidkit', 'Lékárnička', 'heal', '0', '1', '1')
+;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
