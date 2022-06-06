@@ -10,7 +10,7 @@ tasks:
       dest: ./resources/[cfx]
 
     - action: download_github
-      src: https://github.com/NewEditOfficial/trsak-framework-recipe
+      src: https://github.com/NewEditOfficial/framework-recipe
       ref: main
       dest: ./tmp/recipe/
       
