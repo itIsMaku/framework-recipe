@@ -45,9 +45,6 @@ tasks:
       path: ./resources/[framework]/resources.cfg
 
     - action: remove_path
-      path: ./resources/[framework]/[system]/[builders]
-
-    - action: remove_path
       path: ./resources/[framework]/[gamemodes]
 
     - action: remove_path
