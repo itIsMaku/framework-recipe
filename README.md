@@ -1,6 +1,6 @@
 # rozkothe-framework-recipe
 
-# Warning: Its not ready for usage, still WIP.
+# Status: functional "beta".
 
 * If you are interested in contribution, you can join discord. ( https://discord.gg/Ffk7t5U3PH)
 
