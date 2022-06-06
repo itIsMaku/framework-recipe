@@ -1,6 +1,6 @@
 # rozkothe-framework-recipe
 
-# Status: functional "beta".
+# Status of current recipe: Beta
 
 * If you are interested in contribution, you can join discord. ( https://discord.gg/Ffk7t5U3PH)
 
