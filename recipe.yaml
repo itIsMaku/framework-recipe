@@ -1,6 +1,6 @@
-name: Trsak-FW
+name: framework
 version: v1.0
-author: Trsak
+author: rozkothe
 description: Custom FW built by Trsak, rozkothe, RIOT_, SLayer, taurus, Goldberg, Rejben, bertt, Filis93, NewEdit
 
 tasks: 
