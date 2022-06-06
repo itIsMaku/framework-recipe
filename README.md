@@ -1,4 +1,4 @@
-# trsak-framework-recipe
+# rozkothe-framework-recipe
 
 # Warning: Its not ready for usage, still WIP.
 
